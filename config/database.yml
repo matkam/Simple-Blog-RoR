@@ -18,8 +18,17 @@ test:
   pool: 5
   timeout: 5000
 
+#production:
+#  adapter: sqlite3
+#  database: db/production.sqlite3
+#  pool: 5
+#  timeoute: 5000
+
 production:
-  adapter: sqlite3
-  database: db/production.sqlite3
+  adapter: mysql
+  encoding: utf8
+  database: matkam_prod
   pool: 5
-  timeout: 5000
+  username: matkam_rails
+  password: GP344vWOVgbfpLfSFQzeFtDj18NDV45
+  host: mysql.matkam.net
