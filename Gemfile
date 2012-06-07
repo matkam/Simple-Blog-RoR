@@ -39,3 +39,8 @@ gem 'jquery-rails'
 # gem 'ruby-debug19', :require => 'ruby-debug'
 
 gem 'thin'
+
+# Use Google Analytics
+group :production do
+  gem 'rack-google_analytics', :require => "rack/google_analytics"
+end
