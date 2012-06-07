@@ -1,4 +1,6 @@
 MatkamNet::Application.routes.draw do
+  resources :users
+
   resources :posts
 
   get "welcome/index"
